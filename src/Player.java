@@ -18,7 +18,7 @@ public class Player {
 		name = sc.next();
 	}
 
-	public int getInput() {
+	public int choosePlayerWeapon() {
 		// This function lets the user do the selection among
 		// ROCK PAPER SCISSORS
 		// and return what has been selected
@@ -35,7 +35,7 @@ public class Player {
 		else if (c == 'S')
 			return Driver.SCISSORS;
 		else {
-			getInput();
+			choosePlayerWeapon();
 			return 0;
 		}
 	}

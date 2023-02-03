@@ -23,7 +23,7 @@ public class RPS {
 	//This function is called recursively till the player wants to play.
 	//It is even exited if the user of computer completes the first 5 wins.
 	public void startGame() {
-		int playerinput = player.getInput();
+		int playerinput = player.choosePlayerWeapon();
 		Driver.display(player.getName(), playerinput);
 		// Get moves
 		int computerinput = computer.chooseComputerWeapon();
