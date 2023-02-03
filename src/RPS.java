@@ -26,7 +26,7 @@ public class RPS {
 		int playerinput = player.getInput();
 		Driver.display(player.getName(), playerinput);
 		// Get moves
-		int computerinput = computer.getInput();
+		int computerinput = computer.chooseComputerWeapon();
 		Driver.display("computer", computerinput);
 		// Compare moves and determine winner
 		System.out.println(Driver.compareSelections(0, 4));
@@ -39,6 +39,7 @@ public class RPS {
 			printStats();
 		}
 	}
+	
 	private void decideWinner() {
 		switch (Driver.compareSelections(0, 4)) {
 		case 0: // Tie
