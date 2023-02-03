@@ -29,9 +29,8 @@ public class RPS {
 		int computerinput = computer.getInput();
 		Driver.display("computer", computerinput);
 		// Compare moves and determine winner
-		int compareResult=Driver.compareSelections(0, 4);
-		System.out.println(compareResult);
-		switch (compareResult) {
+		System.out.println(Driver.compareSelections(0, 4));
+		switch (Driver.compareSelections(0, 4)) {
 		case 0: // Tie
 			System.out.println("Tie!");
 			break;
