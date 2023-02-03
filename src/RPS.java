@@ -30,6 +30,16 @@ public class RPS {
 		Driver.display("computer", computerinput);
 		// Compare moves and determine winner
 		System.out.println(Driver.compareSelections(0, 4));
+		decideWinner();
+		// Ask the player to play again
+		if (player.playAgain()) {
+			System.out.println();
+			startGame();
+		} else {
+			printStats();
+		}
+	}
+	private void decideWinner() {
 		switch (Driver.compareSelections(0, 4)) {
 		case 0: // Tie
 			System.out.println("Tie!");
@@ -53,13 +63,6 @@ public class RPS {
 		{
 			System.out.println("Computer "+" HAS WON THE GAME............");
 			new RPS();
-		}
-		// Ask the player to play again
-		if (player.playAgain()) {
-			System.out.println();
-			startGame();
-		} else {
-			printStats();
 		}
 	}
 	//helps to get the users name
