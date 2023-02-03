@@ -19,9 +19,6 @@ public class Player {
 	}
 
 	public int choosePlayerWeapon() {
-		// This function lets the user do the selection among
-		// ROCK PAPER SCISSORS
-		// and return what has been selected
 		System.out.println("Select  ROCK  PAPER SCISSOR");
 
 		String input = sc.next();
